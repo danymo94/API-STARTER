@@ -24,7 +24,7 @@ const routes = (): IRouter => {
   combinedRouter.use(authRoutes.getRoutes());
   combinedRouter.use(projectRoutes.getRoutes());
 
-  router.use('', combinedRouter);
+  router.use('/api', combinedRouter);
 
   return router;
 };
